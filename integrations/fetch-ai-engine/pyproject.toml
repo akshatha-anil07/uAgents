@@ -10,5 +10,5 @@ packages = [{include = "ai_engine", from = "src" }]
 
 [tool.poetry.dependencies]
 python = ">=3.9,<3.13"
-uagents = "^0.14.0"
+uagents = { git = "https://github.com/fetchai/uAgents.git", branch = "main", subdirectory = "python", extras = ["wallet"] }
 pydantic = "~2.8"
